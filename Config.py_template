@@ -1,0 +1,19 @@
+import time
+
+SQLITE3_PATH = 'data.db'
+
+current_year=time.localtime()[0]
+KEYWORDS = ['CVE-'+str(current_year)]
+
+
+SERVER_CHAN_KEY = ''
+WXURL = ''
+
+PROXY = {
+    # 'http':'http://127.0.0.1:7890',
+    # 'https':'https://127.0.0.1:7890'
+}
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+}
+TIMEOUT = 10
